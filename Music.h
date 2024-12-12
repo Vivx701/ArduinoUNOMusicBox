@@ -154,41 +154,6 @@ const MusicNotes JINGLE_BELLS_NOTES = {
   2000                                // Delay after finishing playback
 };
 
-const Tone CONTRA_THEME[] = {
-  {NOTE_E4, 300}, {NOTE_G4, 300}, {NOTE_C4, 300}, {NOTE_E4, 300},
-  {NOTE_G4, 300}, {NOTE_C4, 300}, {NOTE_E4, 150}, {NOTE_F4, 150}, {NOTE_E4, 150},
-  {NOTE_D4, 300}, {NOTE_E4, 300}, {NOTE_F4, 300}, {NOTE_E4, 300}, {NOTE_G4, 300},
-  {NOTE_C5, 300}, {NOTE_B4, 300}, {NOTE_A4, 300}, {NOTE_G4, 300},
-  {NOTE_F4, 150}, {NOTE_E4, 150}, {NOTE_F4, 150}, {NOTE_G4, 150},
-  {NOTE_E4, 300}, {NOTE_G4, 300}, {NOTE_C4, 300}, {NOTE_E4, 300},
-  {NOTE_G4, 300}, {NOTE_C4, 300}, {NOTE_E4, 150}, {NOTE_F4, 150}, {NOTE_E4, 150},
-  {NOTE_D4, 300}, {NOTE_E4, 300}, {NOTE_F4, 300}, {NOTE_E4, 300}, {NOTE_G4, 300},
-  {NOTE_C5, 300}, {NOTE_B4, 300}, {NOTE_A4, 300}, {NOTE_G4, 300}
-};
-
-const MusicNotes CONTRA_THEME_NOTES = {
-  CONTRA_THEME,
-  sizeof(CONTRA_THEME) / sizeof(Tone),
-  2, // Begin delay
-  500  // End delay
-};
-
-const Tone SUPER_MARIO[] = {
-  {NOTE_E4, 125}, {NOTE_E4, 125}, {0, 125}, {NOTE_E4, 125}, {0, 125},
-  {NOTE_C4, 125}, {NOTE_E4, 125}, {NOTE_G4, 250}, {0, 250}, {NOTE_G3, 250}, {0, 250},
-  {NOTE_C4, 125}, {0, 125}, {NOTE_G3, 125}, {0, 125}, {NOTE_E3, 125}, {0, 125},
-  {NOTE_A3, 125}, {NOTE_B3, 125}, {NOTE_AS3, 125}, {NOTE_A3, 125}, {NOTE_G3, 125},
-  {NOTE_E4, 125}, {NOTE_G4, 125}, {NOTE_A4, 125}, {NOTE_F4, 125}, {NOTE_G4, 125},
-  {NOTE_E4, 125}, {NOTE_C4, 125}, {NOTE_D4, 125}, {NOTE_B3, 125}
-};
-
-const MusicNotes SUPER_MARIO_NOTES = {
-  SUPER_MARIO,
-  sizeof(SUPER_MARIO) / sizeof(Tone),
-  10, // Begin delay
-  500  // End delay
-};
-
 
 const Tone PAC_MAN_THEME[] = {
   {NOTE_B4, 200}, {NOTE_B5, 200}, {NOTE_FS5, 200}, {NOTE_DS5, 200}, {NOTE_B5, 200},
@@ -234,20 +199,6 @@ const MusicNotes SILENT_NIGHT_NOTES = {
   500  // End delay
 };
 
-const Tone RUDOLPH[] = {
-  {NOTE_G4, 300}, {NOTE_A4, 300}, {NOTE_G4, 300}, {NOTE_E4, 600},
-  {NOTE_G4, 300}, {NOTE_A4, 300}, {NOTE_G4, 300}, {NOTE_E4, 600},
-  {NOTE_C5, 300}, {NOTE_C5, 300}, {NOTE_B4, 300}, {NOTE_A4, 300}, {NOTE_G4, 600},
-  {NOTE_A4, 300}, {NOTE_B4, 300}, {NOTE_A4, 300}, {NOTE_F4, 600}
-};
-
-const MusicNotes RUDOLPH_NOTES = {
-  RUDOLPH,
-  sizeof(RUDOLPH) / sizeof(Tone),
-  1, // Begin delay
-  500  // End delay
-};
-
 const Tone YANKEE_DOODLE[] = {
   {NOTE_C4, 300}, {NOTE_C4, 300}, {NOTE_D4, 300}, {NOTE_E4, 300}, {NOTE_C4, 300}, {NOTE_E4, 300}, {NOTE_D4, 300},
   {NOTE_E4, 600}, {NOTE_G4, 300}, {NOTE_E4, 300}, {NOTE_C4, 300}, {NOTE_C4, 300}, {NOTE_D4, 300}, {NOTE_E4, 300},
@@ -261,6 +212,36 @@ const MusicNotes YANKEE_DOODLE_NOTES = {
   500  // End delay
 };
 
+const Tone ROW_YOUR_BOAT[] = {
+  {NOTE_C4, 400}, {NOTE_C4, 400}, {NOTE_C4, 400}, {NOTE_D4, 400},
+  {NOTE_E4, 800}, {NOTE_E4, 400}, {NOTE_D4, 400}, {NOTE_E4, 400}, {NOTE_F4, 400},
+  {NOTE_G4, 800}, {NOTE_C4, 400}, {NOTE_G4, 400}, {NOTE_G4, 400}, {NOTE_A4, 400},
+  {NOTE_G4, 800}, {NOTE_F4, 400}, {NOTE_E4, 400}, {NOTE_D4, 400}, {NOTE_C4, 800}
+};
+
+const MusicNotes ROW_YOUR_BOAT_NOTES = {
+  ROW_YOUR_BOAT,
+  sizeof(ROW_YOUR_BOAT) / sizeof(Tone),
+  10, // Begin delay
+  500  // End delay
+};
+
+const Tone MARY_LAMB[] = {
+  {NOTE_E4, 400}, {NOTE_D4, 400}, {NOTE_C4, 400}, {NOTE_D4, 400},
+  {NOTE_E4, 400}, {NOTE_E4, 400}, {NOTE_E4, 800},
+  {NOTE_D4, 400}, {NOTE_D4, 400}, {NOTE_D4, 800},
+  {NOTE_E4, 400}, {NOTE_G4, 400}, {NOTE_G4, 800},
+  {NOTE_E4, 400}, {NOTE_D4, 400}, {NOTE_C4, 400}, {NOTE_D4, 400},
+  {NOTE_E4, 400}, {NOTE_E4, 400}, {NOTE_E4, 400}, {NOTE_E4, 400},
+  {NOTE_D4, 400}, {NOTE_D4, 400}, {NOTE_E4, 400}, {NOTE_D4, 400}, {NOTE_C4, 800}
+};
+
+const MusicNotes MARY_LAMB_NOTES = {
+  MARY_LAMB,
+  sizeof(MARY_LAMB) / sizeof(Tone),
+  10, // Begin delay
+  500  // End delay
+};
 
 // Array of pointers to MusicNotes for all melodies
 const MusicNotes* melodies[] = {
@@ -271,12 +252,12 @@ const MusicNotes* melodies[] = {
     &GAME_OF_THRONES_NOTES,
     &TETRIS_THEME_NOTES,
     &JINGLE_BELLS_NOTES,
-    &CONTRA_THEME_NOTES,
     &PAC_MAN_NOTES,
     &DONKEY_KONG_NOTES,
     &SILENT_NIGHT_NOTES,
-    &RUDOLPH_NOTES,
-    &YANKEE_DOODLE_NOTES
+    &YANKEE_DOODLE_NOTES,
+    &ROW_YOUR_BOAT_NOTES,
+    &MARY_LAMB_NOTES
 };
 
 // Number of melodies
